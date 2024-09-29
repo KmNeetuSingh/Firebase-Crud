@@ -1,0 +1,55 @@
+* {
+    background-color: rgb(238, 191, 191); 
+    text-align: center;
+    font-size: large;
+    font-family: cursive;
+    transition: color 0.5s ease, font-size 0.4s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+h1:hover, input:hover, button:hover, label:hover {
+    color: rgb(104, 28, 41);
+    font-size: 2.2rem; 
+}
+
+.todo-container:hover {
+    color: rgb(95, 31, 53);
+    background-color: #9c3939;
+    font-size: 2.2rem; 
+    transition: background-color 0.5s ease-in-out, color 0.5s ease;
+}
+
+input {
+    margin: 1%;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input:focus {
+    background-color: rgb(247, 140, 158);
+}
+
+.todo-container {
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(187, 92, 92);
+    transition: background-color 0.6s ease-in-out;
+}
+
+button {
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    h1, input, button, label {
+        font-size: 1.5rem; 
+    }
+
+    .todo-container {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+}
